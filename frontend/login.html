@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #6C4A3C;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #B95E82;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #F9AFAE;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #F7C5C3;
+        }
+
+        .register-link {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .register-link a {
+            color: #6C4A3C;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>เข้าสู่ระบบ</h1>
+        <form action="login-process.php" method="POST">
+            <!-- Username -->
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้</label>
+                <input type="text" id="username" name="username" required placeholder="กรุณากรอกชื่อผู้ใช้">
+            </div>
+            <!-- Password -->
+            <div class="input-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" required placeholder="กรุณากรอกรหัสผ่าน">
+            </div>
+            <!-- Login Button -->
+            <button type="submit" class="login-button">เข้าสู่ระบบ</button>
+        </form>
+
+        <!-- Register Link -->
+        <div class="register-link">
+            <p>ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
